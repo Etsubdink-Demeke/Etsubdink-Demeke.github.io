@@ -41,20 +41,11 @@
 <details>
   <summary>Client</summary>
   <ul>
-    
-    <li><a href="https://reactjs.org/">Html and Css</a></li>
+  <li><a href="/index.html">Html</a></li>
+  <li><a href="/styles.css">Css</a></li>
   </ul>
 </details>
 
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://expressjs.com/">None
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.postgresql.org/">None</a></li>
-  </ul>
-</details>
 
 <!-- Features -->
 
@@ -140,8 +131,8 @@ To run the project, execute the following command:
 
 <!-- CONTRIBUTING -->
 
-## 🤝 Contributing <a name="contributing"></a>
-Etsubdink Demeke
+## 🤝 Contributing <a name="contributing" href="https://github.com/Etsubdink-Demeke">Etsubdink Demeke</a>
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
