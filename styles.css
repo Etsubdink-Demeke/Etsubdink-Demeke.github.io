@@ -104,8 +104,9 @@ a {
 }
 
 .tech-stack li {
+  float: left;
   padding: 5px 10px 5px 10px;
-  margin-left: -20%;
+  margin-right: 15px;
   list-style: none;
   background: #ebebff;
   border-radius: 8px;
@@ -190,7 +191,10 @@ a {
   margin-top: -10%;
   flex-direction: row;
   align-items: center;
-  width: 75%;
+}
+
+.tech-stack ul {
+  padding: 0;
 }
 
 button {
