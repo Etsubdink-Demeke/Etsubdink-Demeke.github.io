@@ -207,6 +207,12 @@ button {
   color: #396df2;
 }
 
+
+form button {
+  float: left;
+  margin-left: 8%;
+}
+
 .third-page button {
   margin-left: 10%;
   margin-top: -20%;
@@ -442,7 +448,7 @@ ul.dropdown {
   margin: 5%;
 }
 
-.contact-form  {
+.contact-form {
   display: block;
   list-style: none;
   padding-bottom: 5em;
@@ -459,11 +465,6 @@ textarea {
 
 textarea {
   height: 10em;
-}
-
-form button {
-  float: left;
-  margin-left: 8%;
 }
 
 div.language ul li {
