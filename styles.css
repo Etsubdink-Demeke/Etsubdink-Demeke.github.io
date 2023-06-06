@@ -207,6 +207,11 @@ button {
   color: #396df2;
 }
 
+form button {
+  float: left;
+  margin-left: 8%;
+}
+
 .third-page button {
   margin-left: 10%;
   margin-top: -20%;
@@ -414,7 +419,10 @@ ul.dropdown {
 }
 
 .contacts {
-  background: url("images/contact\ form\ shapes-mobile.png") no-repeat center;
+  background: url("images/contact\ form\ shapes-mobile.png") no-repeat right;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .contacts h2 {
@@ -426,37 +434,32 @@ ul.dropdown {
   line-height: 52px;
   text-align: center;
   color: #fff;
+  margin-bottom: 0;
 }
 
 .contacts p {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 22px;
   text-align: center;
   color: #ebebff;
-  padding-left: 5%;
-  margin: 2%;
+  margin: 5%;
 }
 
-.contact-form ul {
+.contact-form {
   display: block;
   list-style: none;
   padding-bottom: 5em;
-  padding-left: 5%;
-}
-
-.contact-form li {
-  margin: 2%;
-  width: 100%;
 }
 
 input,
 textarea {
-  width: 70%;
-  padding: 3%;
-  border-radius: 0.5em;
+  width: 75%;
+  padding: 4%;
+  border-radius: 0.7em;
   border-color: white;
+  margin-bottom: 3%;
 }
 
 textarea {
