@@ -229,10 +229,24 @@
         <h2>contact me</h2>
         <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. 
           I’d love to help with it!</p>
-      
-            
-        </form>
-
+          <form  action="https://formspree.io/f/xbjewydq" method="post" class="contact-form">
+            <ul>
+            <li>
+            <label for="name"></label>
+            <input type="text" maxlength="30" id="name" name="name" placeholder="enter your username" required>
+            </li>
+            <li>
+              <label for="email"></label>
+              <input type="email" name="email" placeholder="enter your email " required>
+            </li>
+            <li>
+              <label for="comment"></label>
+              <textarea id="comment" maxlength="500" name="comment" placeholder="leave your comment" required></textarea>
+            </li>
+            <li class="button">
+              <button type="submit">Get in touch</button>
+              </li>
+            </form>
       </div>
     </section>
    
