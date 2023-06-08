@@ -85,9 +85,8 @@ a {
 
 .first-icons li {
   list-style: none;
-  
-
 }
+
 .headline {
   display: flex;
   flex-direction: column;
@@ -95,6 +94,7 @@ a {
   background: url("images/header-shapes\ mobile.png") no-repeat right;
   background-size: cover;
 }
+
 .bar {
   width: 25px;
   height: 3px;
@@ -564,9 +564,8 @@ div.language ul li {
     color: #091e42;
     padding: 5%;
     padding-bottom: 0;
-    margin : 0;
+    margin: 0;
     padding-top: 0;
-    
   }
 
   .logo {
@@ -627,7 +626,7 @@ div.language ul li {
     padding-bottom: 0;
     width: 90%;
     margin-top: 10%;
-    margin-left: 5% ;
+    margin-left: 5%;
   }
 
   .icons li {
