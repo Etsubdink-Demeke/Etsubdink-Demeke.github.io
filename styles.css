@@ -176,6 +176,7 @@ a {
 .icons {
   width: 70%;
   padding-bottom: 2%;
+  animation: slide-in 1s forwards;
 }
 
 .description {
@@ -251,11 +252,25 @@ button {
   border: 1px solid #6070ff;
   border-radius: 0.5em;
   color: #396df2;
+  transition-property: background-color, color, transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
 }
 
 form button {
   float: left;
   margin-left: 8%;
+}
+
+button:hover {
+  background-color: #396df2;
+  color: white;
+  transform: scale(1.1);
+}
+
+button:active {
+  background: #2230d2;
+  color: white;
 }
 
 .third-page button {
@@ -266,6 +281,18 @@ form button {
   padding-right: 0;
 }
 
+.cards button {
+  justify-content: start;
+  margin-top: 10px;
+  margin-bottom: 15%;
+}
+
+.third-page button:hover {
+  background-color: #396df2;
+  color: white;
+  transform: scale(1.1);
+}
+
 .third-page {
   border-radius: 0 80px 0 0;
   background-color: white;
@@ -273,16 +300,6 @@ form button {
   margin-left: -10px;
   margin-right: -10px;
   padding-bottom: 10%;
-}
-
-button:hover {
-  background-color: #396df2;
-  color: white;
-}
-
-button:active {
-  background: #2230d2;
-  color: white;
 }
 
 .language ul {
@@ -445,12 +462,6 @@ ul.dropdown {
   color: #172b4d;
 }
 
-.cards button {
-  justify-content: start;
-  margin-top: 10px;
-  margin-bottom: 15%;
-}
-
 .screenshoot img {
   width: 90%;
   margin-top: 5%;
@@ -611,6 +622,19 @@ div.language ul li {
   .first-icons {
     width: 30%;
     margin-left: 5%;
+    animation: slide-in 1s forwards;
+  }
+
+  @keyframes slide-in {
+    0% {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
   }
 
   .first-icons ul {
