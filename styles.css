@@ -345,8 +345,12 @@ hr {
   position: relative;
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 95%;
   vertical-align: middle;
+}
+
+.language ul {
+  width: 90%
 }
 
 .language p {
@@ -373,7 +377,8 @@ hr {
 }
 
 ul.dropdown {
-  width: 100%;
+  width: 90%;
+  margin-left: 2%;
 }
 
 .dropdown li a {
@@ -579,7 +584,7 @@ div.language ul li {
   header {
     margin-left: 10%;
     margin-right: 10%;
-    padding-top: 10%;
+    padding-top: 0;
   }
 
   .nav__elements {
