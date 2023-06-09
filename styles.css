@@ -384,7 +384,7 @@ ul.dropdown {
   font-weight: 500;
   font-size: 15px;
   color: #253858;
-  margin-left: 10%;
+  margin-left: 5%;
 }
 
 .language {
@@ -522,7 +522,7 @@ div.language ul li {
 
 .dropdown li img {
   vertical-align: middle;
-  margin-top: 5%;
+  margin-top: 2%;
 }
 
 @media only screen and (min-width: 768px) {
