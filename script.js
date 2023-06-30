@@ -9,23 +9,23 @@ function toggleMobileMenu() {
   mobileMenu.style.display = mobileMenu.style.display === 'block' ? 'none' : 'block';
 }
 
-// // Event listener for hamburger menu
-// hamburgerMenu.addEventListener('click', toggleMobileMenu);
+// Event listener for hamburger menu
+hamburgerMenu.addEventListener('click', toggleMobileMenu);
 
-// // Event listener for close button
-// closeBtn.addEventListener('click', toggleMobileMenu);
+// Event listener for close button
+closeBtn.addEventListener('click', toggleMobileMenu);
 
-// // Event listener for menu options
-// menuOptions.addEventListener('click', function (event) {
-//   if (event.target.tagName === 'A') {
-//     toggleMobileMenu();
+// Event listener for menu options
+menuOptions.addEventListener('click', function (event) {
+  if (event.target.tagName === 'A') {
+    toggleMobileMenu();
 
-//     // Scroll to the selected section if needed
-//     const targetSectionId = event.target.getAttribute('href').slice(1);
-//     const targetSection = document.getElementById(targetSectionId);
-//     targetSection.scrollIntoView({ behavior: 'smooth' });
+    // Scroll to the selected section if needed
+    const targetSectionId = event.target.getAttribute('href').slice(1);
+    const targetSection = document.getElementById(targetSectionId);
+    targetSection.scrollIntoView({ behavior: 'smooth' });
 
-//     event.preventDefault();
-//   }
-// });
+    event.preventDefault();
+  }
+});
 
