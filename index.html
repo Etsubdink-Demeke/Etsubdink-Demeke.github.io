@@ -11,22 +11,36 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section class="first-page">
-      <header>
-        <div class="logo"><a href="">My Logo</a></div>
-        <nav class="menu">
+  <section class="first-page">
+    <header>
+      <div class="logo"><a href="">My Logo</a></div>
+      <nav class="menu">
+        <div id="hamburger-menu">
           <div class="bar"></div>
           <div class="bar"></div>
           <div class="bar"></div>
-        </nav>
-        <nav class="nav__elements">
-          <ul>
-            <li><a href="#work">portifolio</a></li>
-            <li><a href="#about me">About</a></li>
-            <li><a href="#contact-page">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
+        </div>
+      </nav>
+      <nav class="nav__elements">
+        <ul>
+          <li><a href="#work_two">Portfolio</a></li>
+          <li><a href="#about_me">About</a></li>
+          <li><a href="#contact-page">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+  
+  <div id="mobile-menu">
+    <button id="close-btn">&times;</button>
+    <ul id="menu-options">
+      <li><a href="#work_one">Portfolio</a></li>
+      <li><a href="#about_me">About</a></li>
+      <li><a href="#contact-page">Contact</a></li>
+    </ul>
+  </div>
+
+  
       <section class="headline">
         <div class="heading"><h1>I’m Etsubdink.<br>Glad to see you!</h1></div>
         <div class="paragraph"><p>I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p></div>
@@ -43,7 +57,7 @@
         </div>
       </section>
   </section>
-  <section class="work_one">
+  <section class="work_one" id="work_one">
     
     
     
@@ -314,7 +328,7 @@
     </div>
   </div>
   </section>
-   <section class="contact-page">
+   <section class="contact-page" id="contact-page">
       <div class="contacts">
         <h2>Contact me</h2>
         <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. 
@@ -335,6 +349,6 @@
           </form>
       </div>
     </section>
-   
+   <script src="script.js"></script>
   </body>
   </html>
