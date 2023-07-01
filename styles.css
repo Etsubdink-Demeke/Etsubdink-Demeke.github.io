@@ -105,25 +105,19 @@ a {
 
 #mobile-menu {
   display: none;
-}
-
-
-#mobile-menu {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color:rgb(43 62 229 / 70%);
-  backdrop-filter: blur(5px); 
+  background-color: rgb(43 62 229 / 70%);
+  backdrop-filter: blur(5px);
   z-index: 9999;
-
 }
 
 #close-btn {
   float: right;
   color: white;
-  background-color: #2230d2;
   background: none;
   border: none;
   cursor: pointer;
@@ -131,22 +125,36 @@ a {
 }
 
 #menu-options {
-  display:flex;
+  display: flex;
   flex-direction: column;
   list-style: none;
   margin-top: 15%;
 }
 
-#menu-options li {
-  color: white;
-  padding-bottom: 5%;
-  font-size: 24px;
+.part li {
+  left: 0%;
   font-family: 'Poppins', sans-serif;
-  font-weight: 500;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  color: #7a869a;
+  margin-left: 5%;
+  margin-right: 2%;
 }
 
-#menu-options a{
-  color: white;
+.tech-stack li {
+  padding: 5px 10px 5px 10px;
+  margin-left: -20%;
+  list-style: none;
+  background: #ebebff;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: rgba(96, 112, 255, 1);
 }
 
 .heading {
@@ -174,18 +182,6 @@ a {
   color: #344563;
 }
 
-.part li {
-  left: 0%;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 16px;
-  color: #7a869a;
-  margin-left: 5%;
-  margin-right: 2%;
-}
-
 .work_one {
   padding-bottom: 20%;
   display: grid;
@@ -194,20 +190,6 @@ a {
 
 #work_two {
   display: none;
-}
-
-.tech-stack li {
-  padding: 5px 10px 5px 10px;
-  margin-left: -20%;
-  list-style: none;
-  background: #ebebff;
-  border-radius: 8px;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
-  color: rgba(96, 112, 255, 1);
 }
 
 .contact {
@@ -564,6 +546,18 @@ textarea {
 
 div.language ul li {
   width: 100%;
+}
+
+#menu-options li {
+  color: white;
+  padding-bottom: 5%;
+  font-size: 24px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+#menu-options a {
+  color: white;
 }
 
 .dropdown li img {

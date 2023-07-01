@@ -16,7 +16,7 @@ hamburgerMenu.addEventListener('click', toggleMobileMenu);
 closeBtn.addEventListener('click', toggleMobileMenu);
 
 // Event listener for menu options
-menuOptions.addEventListener('click', function (event) {
+menuOptions.addEventListener('click', (event) => {
   if (event.target.tagName === 'A') {
     toggleMobileMenu();
 
@@ -28,4 +28,3 @@ menuOptions.addEventListener('click', function (event) {
     event.preventDefault();
   }
 });
-
