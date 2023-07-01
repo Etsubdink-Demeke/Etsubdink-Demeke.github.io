@@ -25,7 +25,9 @@ contactForm.addEventListener('input', () => {
 });
 
 // Submit form event listener
-document.getElementById('submitBtn').addEventListener('click', () => {
+contactForm.addEventListener('submit', (event) => {
+  event.preventDefault(); // Prevent the form from submitting by default
+
   const emailValue = emailInput.value;
 
   if (emailValue === emailValue.toLowerCase()) {
