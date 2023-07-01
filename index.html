@@ -43,16 +43,12 @@
         </div>
       </section>
   </section>
-  <section class="work_one">
-    
-    
-    
-   <div class="second-page">
+  <section id="projects" class="work_one">
+    <div class="second-page">
       <div class="cards">
         <div class="screenshoot">
-          <img src="images/Portoflio Card/Snapshoot Portfolio 3.jpg" alt="portifolio screenshoot">
+          <img src="images/Portoflio Card/Snapshoot Portfolio 3.jpg" alt="portfolio screenshot">
         </div>
-
         <div class="description">
           <h2>Tonic</h2>
           <span class="part">
@@ -70,99 +66,31 @@
               <li>JavaScript</li>
             </ul>
           </span>
-        <div class="button">
-          <button>see projects</button>
+          <div class="button">
+            <button class="see-project">See Project</button>
+          </div>
         </div>
-      </div>
       </div>
   
-    <div class="cards">
-      
-      <div class="screenshoot">
-        <img src="images/Portoflio Card/Snapshoot Portfolio 4.jpg" alt="portifolio screenshoot">
-      </div>
-
-      <div class="description">
-        <h2>Multi-Post Stories</h2>
-        <span class="part">
-          <ul>
-            <li id="canopy">CANOPY</li>
-            <li>Back End Dev</li>
-            <li>2015</li>
-          </ul>
-        </span>
-        <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-        <span class="tech-stack">
-          <ul x>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-          </ul>
-        </span>
-        <div class="button">
-          <button>see projects</button></div></div>
-       
-        
-      </div>
-    
-    <div class="cards">
-      
-      <div class="screenshoot">
-        <img src="images/Portoflio Card/Snapshoot Portfolio 1.jpg" alt="portifolio screenshoot">
-      </div>
-
-      <div class="description">
-        <h1>Tonic</h1>
-        <span class="part">
-          <ul>
-            <li id="canopy">CANOPY</li>
-            <li>Back End Dev</li>
-            <li>2015</li>
-          </ul>
-        </span>
-        <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-        <span class="tech-stack">
-          <ul x>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-          </ul>
-        </span>
-        <div class="button">
-          <button>see projects</button></div>
-        </div>
-       
-      </div>
-    
-    <div class="cards">
-      
-      <div class="screenshoot">
-        <img src="images/Portoflio Card/Snapshoot Portfolio 2.jpg" alt="portifolio screenshoot">
-      </div>
-
-      <div class="description">
-        <h2>Multi-Post Stories</h2>
-        <span class="part">
-          <ul>
-            <li id="canopy">CANOPY</li>
-            <li>Back End Dev</li>
-            <li>2015</li>
-          </ul>
-        </span>
-        <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-        <span class="tech-stack">
-          <ul x>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-          </ul>
-        </span>
-        <div class="button">
-          <button>see projects</button></div></div>
-        
+      <!-- Add more project cards as needed -->
+  
     </div>
-    </section>
-   
+  </section>
+  
+  <div id="popup-container">
+    <div id="popup-card">
+      <button class="close-btn">X</button>
+      <h3 id="popup-title"></h3>
+      <p id="popup-description"></p>
+      <img id="popup-image" src="" alt="Project Image">
+      <p id="popup-technologies"></p>
+      <a id="popup-live-link" href="#" target="_blank">Live Version</a>
+      <a id="popup-source-link" href="#" target="_blank">Source Code</a>
+    </div>
+  </div>
+  
+
+
     <section id="work_two">
       <div class="cards">
          <div class="screenshoot"><img src="images/Portoflio Card/Snapshoot Portfolio.jpg"></div>
@@ -335,6 +263,6 @@
           </form>
       </div>
     </section>
-   
+  <script src="scripts/pop-up.js"></script>
   </body>
   </html>
