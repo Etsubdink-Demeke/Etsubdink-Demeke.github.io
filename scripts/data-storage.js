@@ -1,18 +1,41 @@
 // Retrieve the form element
-var form = document.getElementById("contactForm");
+const contactForm = document.getElementById('contactForm');
 
-// Load form data from local storage if available
-var formData = JSON.parse(localStorage.getItem("formData")) || {};
+// Retrieve the input fields
+const nameInput = document.querySelector('#contactForm input[name="name"]');
+const emailInput = document.querySelector('#contactForm input[name="email"]');
+const commentInput = document.getElementById('comment');
 
-// Pre-fill form fields with stored data
-form.name.value = formData.name || "";
-form.email.value = formData.email || "";
-form.comment.value = formData.comment || "";
+// Load data from local storage if available
+let formData = JSON.parse(localStorage.getItem('formData')) || {};
 
-// Save form data to local storage when input fields change
-form.addEventListener("input", function() {
-  formData.name = form.name.value;
-  formData.email = form.email.value;
-  formData.comment = form.comment.value;
-  localStorage.setItem("formData", JSON.stringify(formData));
+// Populate the form fields with the loaded data
+nameInput.value = formData.name || '';
+emailInput.value = formData.email || '';
+commentInput.value = formData.comment || '';
+
+// Save form data to local storage on input change
+contactForm.addEventListener('input', () => {
+  formData = {
+    name: nameInput.value,
+    email: emailInput.value,
+    comment: commentInput.value,
+  };
+  localStorage.setItem('formData', JSON.stringify(formData));
+});
+
+// Submit form event listener
+document.getElementById('submitBtn').addEventListener('click', () => {
+  const emailValue = emailInput.value;
+
+  if (emailValue === emailValue.toLowerCase()) {
+    // Validation passed, submit the form
+    document.getElementById('error').style.display = 'none'; // Hide the error message
+    contactForm.submit();
+  } else {
+    // Validation failed, show error message
+    const errorDiv = document.getElementById('error');
+    errorDiv.innerText = 'Email must be in lowercase.';
+    errorDiv.style.display = 'block';
+  }
 });
