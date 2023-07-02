@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/styles.css" />
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>portifolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
+</head>
+<body>
 
-    <title>Portfolio | </title>
-  </head>
-  <body>
-    <di
-    v id="modal-container">
-      <article class="modal d-none">
-        
-      </article>
-    </div>
+  
+  <section class="first-page">
     <header>
       <nav>
         <a href="#" class="logo"> My Logo </a>
@@ -37,51 +36,63 @@
         </ul>
       </nav>
     </header>
-    <section class="hero">
-      <div class="container">
-        <h1 class="title">
-          I'm Etsubdink<br />
-          Glad to see you!
-        </h1>
-        <p class="description">
-          I’m a software developer! I can help you build a product , feature or
-          website Look through some of my work and experience! If you like what
-          you see and have a project you need coded, don’t hesitate to contact
-          me.
-        </p>
-        <h2 class="connect">Let's connect</h2>
-        <ul class="social">
-          <li>
-            <a href="twitter.com"
-              ><img src="./images/svg/twitter.svg" alt="twitter arrow"
-            /></a>
-          </li>
-          <li>
-            <a href="linkedin.com"
-              ><img src="./images/svg/Linkedin.svg" alt="LinkedIn arrow"
-            /></a>
-          </li>
-          <li>
-            <a href="https://medium.com"
-              ><img src="./images/svg/medium.svg" alt="Medium arrow"
-            /></a>
-          </li>
-          <li>
-            <a href="github.com"
-              ><img src="./images/svg/github.svg" alt="Github arrow"
-            /></a>
-          </li>
-          <li>
-            <a href="angellist.com"
-              ><img src="./images/svg/angellist.svg" alt="Angel List arrow"
-            /></a>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="projects" id="portfolio">
-      <div class="container-projects">
-        <!--here project cards -->
+
+  
+  <div id="mobile-menu">
+    <button id="close-btn">&times;</button>
+    <ul id="menu-options">
+      <li><a href="#work_one">Portfolio</a></li>
+      <li><a href="#about_me">About</a></li>
+      <li><a href="#contact-page">Contact</a></li>
+    </ul>
+  </div>
+
+  
+      <section class="headline">
+        <div class="heading"><h1>I’m Etsubdink.<br>Glad to see you!</h1></div>
+        <div class="paragraph"><p>I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p></div>
+        <div class="contact-link"><p>LET’S CONNECT</p></div>
+        <div class="first-icons">
+
+          <ul>
+            <li><a href=""><img src="images/icons/Vector.png" alt="Twitter icon"></a></li>
+            <li><a href=""><img src="images/icons/Linkedin icon.png" alt="Twitter icon"></a></li>
+            <li><a href=""><img src="images/icons/Vector (1).png" alt="Twitter icon"></a></li>
+            <li> <a href=""><img src="images/icons/Vector (2).png" alt="Twitter icon"></a></li>
+            <li><a href=""><img src="images/icons/Vector (3).png" alt="Twitter icon"></a></li>
+          </ul>
+        </div>
+      </section>
+  </section>
+
+
+  <section id="projects" class="work_one">
+    <div class="second-page">
+      <div class="cards">
+        <div class="screenshoot">
+          <img src="images/Portoflio Card/Snapshoot Portfolio 3.jpg" alt="portfolio screenshot">
+        </div>
+        <div class="description">
+          <h2>Tonic</h2>
+          <span class="part">
+            <ul>
+              <li id="canopy">CANOPY</li>
+              <li>Back End Dev</li>
+              <li>2015</li>
+            </ul>
+          </span>
+          <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+          <span class="tech-stack">
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </span>
+          <div class="button">
+            <button class="see-project" data-project="tonic">See Project</button>
+          </div>
+        </div>
       </div>
     </section>
     <div class="blank">
@@ -201,12 +212,13 @@
               </li>
             </ul>
           </form>
-        </div>
-      </section>
-    </div>
-    <script src="scripts/menu.js"></script>
-    <script type="module" src="scripts/projects.js"></script>
-    <script type="module" src="scripts/validation-form.js"></script>
-    <script type="module" src="scripts/manageData.js"></script>
+      </div>
+    </section>
+    <script src="scripts/pop-up.js"></script>
+    <script src="scripts/data-storage.js"></script>
+   <script src="script.js"></script>
+ <script src="scripts/validation.js"></script>
+
+
   </body>
-</html>
+  </html>
